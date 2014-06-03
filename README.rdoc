@@ -2,21 +2,21 @@
 
 The goal of this application is to create a Craigslist app where:
 
-*A user can create an account
+* A user can create an account
 
-*A user can log in
+* A user can log in
 
-*A user can create a post in a category
+* A user can create a post in a category
 
-*A user can search for items in a city
+* A user can search for items in a city
 
-*A user can view a post
+* A user can view a post
 
-*A user can login with Facebook
+* A user can login with Facebook
 
-*A user can comment on an item
+* A user can comment on an item
 
-*A user can search for items in a category
+* A user can search for items in a category
 
 
 
