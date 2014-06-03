@@ -1,0 +1,27 @@
+
+development: 
+  adapter: postgresql
+  host: localhost
+  username:
+  password:
+  database: craigslist_clone_dev
+  pool: 5
+  timeout: 5000
+
+test: 
+  adapter: postgresql
+  host: localhost
+  username:
+  password:
+  database: craigslist_clone_test
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  host: localhost
+  username: 
+  password: 
+  database: craigslist_clone
+  pool: 5
+  timeout: 5000
