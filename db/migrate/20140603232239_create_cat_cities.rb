@@ -1,4 +1,4 @@
-class CreateJoinTable < ActiveRecord::Migration
+class CreateCatCities < ActiveRecord::Migration
   def change
     create_join_table :cities, :categories do |t|
        t.index :city_id
