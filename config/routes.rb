@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :cities
   resources :categories
+  resources :posts
 
   root 'cities#index'
 

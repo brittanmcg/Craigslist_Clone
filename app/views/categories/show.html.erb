@@ -1,6 +1,9 @@
 <h1><%= @category.name %></h1>
-<% if @posts.name %>
-  <%= @posts.all %>
-  <% else %>
+<% if @posts.any? == false %>
   <h1>You need posts</h1>
+  <% else %>
+  <% @posts.each do |post| %>
+  <%= post.title %>
+  <% end %>
 <% end %>
+<%= render partial: 'categories/new_post' %>

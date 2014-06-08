@@ -1,0 +1,21 @@
+<h1>Create a new post and sell some stuff!</h1>
+
+<ul>
+  <%= form_for @post do |f| %>
+  <li>
+    <%= f.label :title  %>
+    <%= f.text_field :title  %>
+  </li>
+  <li>
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </li>
+  <li>
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+  </li>
+  <li>
+    <%= f.submit %>
+  </li>
+  <% end %>
+</ul>

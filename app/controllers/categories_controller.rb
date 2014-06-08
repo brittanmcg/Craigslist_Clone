@@ -2,7 +2,9 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @posts = @category.posts
+    @post = Post.new
+    @posts = @category.posts.all
+    # render :partial => 'categories/new_post'
   end
 
 end
