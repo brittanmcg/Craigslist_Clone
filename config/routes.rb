@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   resources :cities
+  resources :categories
+  resources :posts
 
   root 'cities#index'
 

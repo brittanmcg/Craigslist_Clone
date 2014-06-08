@@ -16,4 +16,5 @@ cities.each do |city|
     new_cat = Category.create(name: category)
     new_city.categories << new_cat
   end
+  new_city
 end
