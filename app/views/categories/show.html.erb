@@ -1,9 +1,11 @@
 <h1><%= @category.name %></h1>
+<ul>
 <% if @posts.any? == false %>
   <h1>You need posts</h1>
   <% else %>
   <% @posts.each do |post| %>
-  <%= post.title %>
+  <li><%= link_to post.title, post_path(post) %></li>
   <% end %>
 <% end %>
-<%= render partial: 'categories/new_post' %>
+</ul>
+<%= render partial: 'posts/new_post' %>
