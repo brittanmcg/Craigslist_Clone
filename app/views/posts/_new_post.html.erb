@@ -1,7 +1,7 @@
 <h1>Create a new post and sell some stuff!</h1>
 
 <ul>
-  <%= form_for @post do |f| %>
+  <%= form_for @post  do |f| %>
   <li>
     <%= f.label :title  %>
     <%= f.text_field :title  %>
@@ -9,13 +9,14 @@
   <li>
     <%= f.label :content %>
     <%= f.text_area :content %>
+    <%= hidden_field_tag :category_id, @category.id %>
   </li>
   <li>
     <%= f.label :price %>
     <%= f.number_field :price %>
   </li>
   <li>
-    <%= f.submit %>
+    <%= f.submit  %>
   </li>
   <% end %>
 </ul>

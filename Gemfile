@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 group :development, :test do 
   gem 'rspec-rails','2.13.1'
   gem 'minitest'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'faker'
 end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'

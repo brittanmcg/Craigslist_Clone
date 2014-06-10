@@ -10,9 +10,14 @@ describe CitiesController do
   end
 
   context "#show" do 
-    let (:new_city){c_name: "Some great city"}
-    it "should find a city with valid params" do 
-      
+    let (:new_city){City.create(c_name: "Great City")}
+
+    it "should test the show route" do 
+      city_path(10).should == '/cities/10'
+    end
+
+    it "should find a valid city" do 
+      expect(new_city.c_name).to eq("Great City")
     end
   end
 
